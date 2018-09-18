@@ -3,6 +3,14 @@ body{
     margin: 0;
 }
 
+#chooseside{
+    display: flex;
+}
+
+#sabers{
+    display: none;
+}
+
 .question{
     height: 100vh;
     background-color: black;
@@ -38,4 +46,20 @@ button{
 
 .sith{
     background-color: rgb(216, 37, 37);
+}
+
+.tuim{
+    height: 60vh;
+    width: 15px;
+    background: linear-gradient(90deg, rgb(26, 136, 26), rgb(3, 187, 3), rgb(26, 136, 26));
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 50px green;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.base{
+    height: 15vh;
+    width: 15px;
+    background: linear-gradient(90deg, rgb(78, 78, 78), lightgray, rgb(78, 78, 78));
 }
