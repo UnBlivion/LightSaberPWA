@@ -1,4 +1,4 @@
-let cacheName = 'meu-app-cache-v1';
+let cacheName = 'Sabers-v1';
 let filesToCache = [
     '/',
     '/index.html',
