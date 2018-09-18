@@ -15,6 +15,8 @@ function escolherSith() {
 function escolherJedi() {
     chooseSide.style.display = 'none';
     sabers.style.display = 'flex';
+    lightSaber.style.background = 'linear-gradient(90deg, rgb(26, 136, 26), rgb(3, 187, 3), rgb(26, 136, 26))'
+    lightSaber.style.boxShadow = '0 0 50px green';
 }
 
 function turnOn(){
