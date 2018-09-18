@@ -63,3 +63,13 @@ button{
     width: 15px;
     background: linear-gradient(90deg, rgb(78, 78, 78), lightgray, rgb(78, 78, 78));
 }
+
+.return{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba(2, 2, 31, 0.123);
+    border-radius: 0;
+    margin-top: 10px;
+}

@@ -3,6 +3,7 @@ let sabers = document.querySelector("#sabers");
 let buttonJedi = document.querySelector(".jedi");
 let buttonSith = document.querySelector(".sith");
 let lightSaber = document.querySelector(".tuim");
+let voltar = document.querySelector(".return");
 
 function escolherSith() {
     chooseSide.style.display = 'none';
@@ -25,6 +26,12 @@ function turnOn(){
     }
 }
 
+function retornar(){
+    chooseSide.style.display = 'flex';
+    sabers.style.display = 'none';
+}
+
+voltar.onclick = retornar;
 buttonSith.onclick = escolherSith;
 buttonJedi.onclick = escolherJedi;
 sabers.onclick = turnOn;
