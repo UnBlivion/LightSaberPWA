@@ -1,9 +1,11 @@
 let chooseSide = document.querySelector("#chooseside");
 let sabers = document.querySelector("#sabers");
+let sabre = document.querySelector('.sabre');
 let buttonJedi = document.querySelector(".jedi");
 let buttonSith = document.querySelector(".sith");
 let lightSaber = document.querySelector(".tuim");
 let voltar = document.querySelector(".return");
+let zunim = new Audio('lightsaber_03.wav');
 
 function escolherSith() {
     chooseSide.style.display = 'none';
@@ -25,6 +27,7 @@ function turnOn(){
     }
     else{
         lightSaber.style.opacity = 1;
+        zunim.play();
     }
 }
 
@@ -36,7 +39,7 @@ function retornar(){
 voltar.onclick = retornar;
 buttonSith.onclick = escolherSith;
 buttonJedi.onclick = escolherJedi;
-sabers.onclick = turnOn;
+sabre.onclick = turnOn;
 
 // Registra o service worker
 if ('serviceWorker' in navigator) {
