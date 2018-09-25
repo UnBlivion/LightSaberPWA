@@ -20,7 +20,12 @@ body{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 7.25vw;
+    margin: 0;
+}
+
+h1{
+    margin: 0 0 5px;
 }
 
 .lados{
@@ -31,7 +36,7 @@ body{
 }
 
 button{
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 50px;
     font-size: 2rem;
     font-family: sans-serif;
@@ -61,15 +66,30 @@ button{
 .base{
     height: 15vh;
     width: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     background: linear-gradient(90deg, rgb(78, 78, 78), lightgray, rgb(78, 78, 78));
 }
 
 .return{
-    display: block;
+    display: flex;
     position: absolute;
-    bottom: 0;
-    width: 100vw;
-    background-color: rgba(2, 2, 31, 0.123);
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    background-color: rgba(99, 99, 104, 0.404);
     border-radius: 0;
-    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.detalhe{
+    border-radius: 50%;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
 }
