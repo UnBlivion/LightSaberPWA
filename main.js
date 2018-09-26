@@ -21,17 +21,19 @@ function escolherJedi() {
     lightSaber.style.boxShadow = '0 0 50px green';
 }
 
-function turnOn(){
-    if(lightSaber.style.opacity == 1){
-        lightSaber.style.opacity = 0;
+function turnOn() {
+    if (lightSaber.style.transform == 'translateY(0px) scaleY(1)') {
+        lightSaber.style.transform = 'translateY(calc(100% - 30vh)) scaleY(0)';
+        sabre.style.overflowX = 'hidden';
     }
-    else{
-        lightSaber.style.opacity = 1;
+    else {
+        lightSaber.style.transform = 'translateY(0) scaleY(1)';
+        sabre.style.overflowX = 'visible';
         zunim.play();
     }
 }
 
-function retornar(){
+function retornar() {
     chooseSide.style.display = 'flex';
     sabers.style.display = 'none';
 }
@@ -44,10 +46,10 @@ sabre.onclick = turnOn;
 // Registra o service worker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-    .register('./service-worker.js')
-    .then(function() { 
-        console.log('Service Worker Registered'); 
-    }, function(error){
-        console.error(error);
-    });
+        .register('./service-worker.js')
+        .then(function () {
+            console.log('Service Worker Registered');
+        }, function (error) {
+            console.error(error);
+        });
 }
