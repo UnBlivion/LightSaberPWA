@@ -60,7 +60,7 @@ button{
     width: 15px;
     background: linear-gradient(90deg, rgb(26, 136, 26), rgb(3, 187, 3), rgb(26, 136, 26));
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 50px green;
+    /* box-shadow: 0 0 50px green; */
     transition: 0.3s ease;
     transform: translateY(calc(100% - 30vh)) scaleY(0);
     z-index: -1;
